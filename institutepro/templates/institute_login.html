@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+<head>
+    <title>Login Form</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="{% static 'css/login_style.css' %}">
+</head>
+<body>
+<div class="login-box">
+
+<center>
+        <img src="{% static 'images/login.jpg' %}" alt="mahesh"
+       style="width:200px; height: 200px;"  >
+</center>
+
+<h1 style="margin-right: 400px">Login</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="textbox">
+    {{ lform.username }}
+    </div>    <br>
+
+    <div class="textbox">
+    {{ lform.password }}
+    </div>
+    <br>
+    <input type="submit" value="Login" class="btn btn-success btn-block" >
+    <a class="a1" href="/reg/">New User</a>
+    <a class="a1" href="/password/">Forgot Password</a>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+
+body{
+    background: url("https://image.freepik.com/free-photo/beautiful-blue-sea-and-sky_1232-2785.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    margin-bottom: 50px;
+}

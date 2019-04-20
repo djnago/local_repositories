@@ -1,0 +1,32 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+body{
+    background: url("https://image.freepik.com/free-photo/beautiful-blue-sea-and-sky_1232-2785.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h4{
+    text-align: center;
+    }
+h1{
+    text-align: center;
+    margin-top: 100px;
+    }
+form{
+    margin-bottom: 50px;
+ }
+b{
+    font-size: 20px;
+}
+#b12{
+    font-size: 30px;
+    font-family: cursive;
+    color: #f44336;
+}
+h4{
+    color: #f44336;
+    font-size: 30px;
+}

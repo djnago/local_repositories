@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+<html>
+<head>
+    <title>
+        FeedBack Form
+    </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+{% block head %}Feedback Page{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/feedback_style.css' %}">
+
+<h1>Your Feedbacks are....</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            {% for i in data1 %}
+                <b id="b12">Name:  {{ i.name.upper }}</b><br>
+                <b>Rating:</b> {{ i.rating }}<br>
+                <b>Time:</b>  {{ i.time }}<br>
+                <b>Feedback:</b> {{ i.feedback }}<br><br><br>
+            {% endfor %}
+        </div>
+    </div>
+        <br>
+        <br>
+
+<h4>Please enter your feedback here...</h4>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+                <br>
+                <center>
+                <input type="submit" value="Submit" class="btn btn-success">
+                <input type="reset" value="Reset" class="btn btn-danger">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

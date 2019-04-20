@@ -1,0 +1,27 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+h1{
+    text-align: center;
+}
+
+body{
+        font-family: Arial;
+        background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiP2xaOSP-uPpTBHRE9fRSeyjgtKFibKLAIgTiY9zCW8zEU4M");
+        background-size: cover;
+    }
+label{
+        color: #fff;
+        font-size: 20px;
+    }
+.h{
+        text-align: center;
+        color: #fff;
+    }
+b{
+        color: #f44336;
+    }
+.checkbox {
+        margin-top: -10px;
+    }
